@@ -1,0 +1,82 @@
+1. What type would you choose for the following “numbers”?
+    - A person’s telephone number: string
+    - A person's height: double 
+    - A person's age: int 
+    - A person’s gender (Male, Female, Prefer Not To Answer): enum
+    - A person's salary: double
+    - A book's ISBN: string
+    - A book's price: double
+    - A book's shipping weight: double
+    - A country's population: long
+    - The number of stars in the universe: long
+    - The number of employees in each of the small or medium businesses in the
+      United Kingdom (up to about 50,000 employees per business): int
+      
+2. What are the difference between value type and reference type variables? What is
+   boxing and unboxing?
+   Answer: value type can hold the value, but reference type only holds the memory address for the value it points to;
+   value types are stored in the stack memory, but reference type are stored in heap memory; value types will not be 
+   collected by garbage collector, but reference type will be collected by garbage collector.  
+           Boxing is to convert value type to object type; unboxing is the reversed procedure of boxing, which convert
+   the object type back to the value type. 
+   
+   
+3. What is meant by the terms managed resource and unmanaged resource in .NET?
+    Answer: In .NET, managed resource are managed and handled by CLR. Unmanaged resources are NOT managed and handled by CLR.
+
+4. Whats the purpose of Garbage Collector in .NET?
+    Answer: In .NET, the purpose of garbage collector is to automatically reclaim the memory that is no longer in use.
+    The garbage collector helps us achieve better memory utilization.
+
+The answers and code of Playing with Console App is in assignment01.cs file.
+    
+Controlling Flow and Converting Types:
+1. What happens when we divide an int variable by 0?
+Answer: the program will throw a System.DivideByZeroException.
+
+2. What happens when we divide a double variable by 0?
+Answer: the program will return an infinity value.
+
+3. What happens when we overflow an int value, that is, set it to a value beyond its range?
+Answer: the program will return the minimum value instead. 
+
+4. What is the difference between x = y++; and x = ++y;?
+Answer: In x = y++, x will be set the value of y first then y increment by 1. In x = ++y, y will increment by 1 first then x will be set to the value of y after increment.
+
+5. What is the difference between break, continue, and return when used inside a loop statement?
+Answer: In the loop statement, break will immediately terminate the entire loop; continue statement will end the current iteration and jump to the next iteration; return will exit the loop and the method.
+
+6. What are the three parts of a for statement and which of them are required?
+Answer: the three parts of a for statements are 1. initialization 2. condition 3. iteration. Only the condition is required.
+
+7. What is the difference between the = and == operators?
+Answer: '=' is the assignment operator, which means we are using '=' to assign values to the variable. '==' is the equality/comparison operator. We use '==' to compare values.
+
+8. Does the following statement compile? for ( ; true; );
+Answer: yes, but this statement is an indefinite loop.
+
+9. What does the underscore _ represent in a switch expression?
+Answer: in a switch expression, underscore '_' is like a default condition.
+
+10. What interface must an object implement to be enumerated over by using the foreach statement?
+Answer: IEnumerable 
+
+The answers and code of Practice loops and operators are in the assignment01.cs file.
+
+02 Arrays and Strings:
+1. When to use String vs. StringBuilder in C#?
+Answer: if we need to perform a lot of operations and modifications on the string, then StringBuilder is a better option. If we don't frequently make modifications on the string, then String is a better option.
+
+2. What is the base class for all arrays in C#?
+Answer: the base class for all arrays in C# is System.Array
+
+3. How do you sort an array in C#?
+Answer: we can use the built-in function Array.Sort() to sort an array in C#.
+
+4. What property of an array object can be used to get the total number of elements in an array?
+Answer: we can use Length property to return the total number of elements in an array.
+
+5. Can you store multiple data types in System.Array?
+Answer: no
+
+6. What's the difference between the System.Array.CopyTo() and System.Array.Clone()?
