@@ -1,0 +1,82 @@
+03 Object-Oriented Programming assignment:
+
+1. What are the six combinations of access modifier keywords and what do they do? 
+Answer: The six combinations of access modifier keywords are public, private, protected, internal, protected internal, and private protected.
+public can be accessed by other code in the same assembly or in other assembly that reference it; private can only be accessed in the same class; protected can be accessed in the same class or in the child class; internal can only be accessed by any code in the same assembly; protected internal can be accessed by any code in the assembly as long as it is declared; private protected can be accessed only by declared class within containing assembly.                
+
+
+2.What is the difference between the static, const, and readonly keywords when applied to
+a type member?
+Answer: Static members are shared across all instance of a class; const members are unchaneable and are evaluated at compile time; readonly members are unchangeable and are evaluated at runtime.
+
+3. what does a constructor do?
+Answer: constructor is used to create instance of the class.
+
+4. Why is the partial keyword useful?
+Answer: the partial keyword is used to split the large class into multiple files for better code management.
+
+5. What is a tuple?
+Answer: tuple is a data structure that enable us to store multiple elements with different data types.
+
+6. What does the C# record keyword do?
+Answer: C# record is like a container for immutable data types, and properties of the object become readonly after the record object is created.
+
+7. What does overloading and overriding mean?
+Answer: overloading means method with the same name but different signatures; overriding means method in the parent class and subclass share the same method name and parameters but with different method implementations.
+
+8. What is the difference between a field and a property?
+Answer: field is the variable that is defined in a class; property is the accessor methods, which provide mechanism to read, write data fields in the class.
+
+9. How do you make a method parameter optional?
+Answer: we can use defaut values to make a method parameter optional.
+
+10. What is an interface and how is it different from abstract class?
+Answer: interface defines a couple of methods with method signatures without implementation. However, abstract class can both have abstract methods and concrete methods.
+
+11. What accessibility level are members of an interface?
+Answer: public
+
+12. True/False. Polymorphism allows derived classes to provide different implementations
+of the same method.
+Answer: True.
+
+13. True/False. The override keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.
+Answer: True.
+
+14. True/False. The new keyword is used to indicate that a method in a derived class is
+providing its own implementation of a method.
+Answer: True.
+
+15. True/False. Abstract methods can be used in a normal (non-abstract) class. 
+Answer: False.
+
+16.True/False. Normal (non-abstract) methods can be used in an abstract class. 
+Answer: True.
+
+17. True/False.Derived classes can override methods that were virtual in the base class. 
+Answer: True.
+
+18. True/False.Derived classes can override methods that were abstract in the base class. 
+Answer: True.
+
+19. True/False.In a derived class, you can override a method that was neither virtual non abstract in the
+base class.
+Answer: False.
+
+20. True/False. A class that implements an interface does not have to provide an
+implementation for all of the members of the interface.
+Answer: False.
+
+21. True/False. A class that implements an interface is allowed to have other members that
+aren’t defined in the interface.
+Answer: True.
+
+22. True/False. A class can have more than one base class.
+Answer: False.
+
+23. True/False. A class can implement more than one interface.
+Working with methods
+Answer: True.
+
+Code and Answers in Working with methods are in the assignment3.cs file.
